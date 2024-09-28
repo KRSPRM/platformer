@@ -2,7 +2,6 @@ import sys
 import pygame
 
 from scripts.utils import load_image
-from scripts.constants import *
 from scripts.entities import PhysicsEntity
 
 class Game:
