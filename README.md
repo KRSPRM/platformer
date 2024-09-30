@@ -1,2 +1,2 @@
 # platformer
-my solo project platformer game
+this project is for learning myself the way of game development
