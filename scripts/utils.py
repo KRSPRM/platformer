@@ -9,6 +9,7 @@ def load_image(path):
     img.set_colorkey((0, 0, 0))
     return img
 
+
 def load_images(path):
     images = []
     for img_name in sorted(os.listdir(BASE_IMG_PATH + path)): # os might not work on Linux(won't sort alphabethicaly), use sorted!
