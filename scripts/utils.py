@@ -26,11 +26,11 @@ class Animation:
         self.frame = 0
   
 
-    def copy(self):
+    def copy(self) -> None:
         return Animation(self.images, self.img_duration, self.loop)
     
     
-    def update(self):
+    def update(self) -> None:
         if self.loop:
             self.frame = (self.frame + 1) % (self.img_duration * len(self.images))
         else:
@@ -39,5 +39,5 @@ class Animation:
                 self.done = True
             
             
-    def img(self):
+    def img(self) -> None:
         return self.images[int(self.frame / self.img_duration)] # Used for indexing, which image to show
